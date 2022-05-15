@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet"> 
+    <style>
+
+        table{
+            height: 100%;
+        }
+        table, tr, th{
+            
+            border: 1px solid;
+            border-collapse: collapse;
+            width: 50%;
+            height: 100%;
+            padding: 10px;
+        }
+        
+        label{
+            padding-right: 120px;
+        }
+        
+        li{
+            color: green;
+        }
+        .pageContent table tr th li{
+            color: green;
+            font-size: smaller;
+            float: left;
+        }
+        #src{
+            text-align: center;
+        }
+    </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function showAll(){
+            $("#javaRow").show();
+            $("#phthonRow").show();
+            $("#htmlRow").show();
+            $("#jsRow").show();
+            $("#algoRow").show();
+        }
+        function showJava(){
+            $("#javaRow").show();
+            $("#phthonRow").hide();
+            $("#htmlRow").hide();
+            $("#jsRow").hide();
+            $("#algoRow").hide();
+        }
+        function showPhy(){
+            $("#javaRow").hide();
+            $("#phthonRow").show();
+            $("#htmlRow").hide();
+            $("#jsRow").hide();
+            $("#algoRow").hide();
+        }
+        function showHTML(){
+            $("#javaRow").hide();
+            $("#phthonRow").hide();
+            $("#htmlRow").show();
+            $("#jsRow").hide();
+            $("#algoRow").hide();
+        }
+        function showJS(){
+            $("#javaRow").hide();
+            $("#phthonRow").hide();
+            $("#htmlRow").hide();
+            $("#jsRow").show();
+            $("#algoRow").hide();
+        }
+        function showDA(){
+            $("#javaRow").hide();
+            $("#phthonRow").hide();
+            $("#htmlRow").hide();
+            $("#jsRow").hide();
+            $("#algoRow").show();
+        }
+    </script>
+   
+</head>
+<body>
+    
+     
+    <div class="pageHeader">
+     
+        <img src="logo.png" alt="" height="7%" width="7%" style="float: left; padding-left: 50px; ">
+        <br>
+        <h1 style="text-align: center;">College of Computer Engineering and Science</h1>
+     
+    </div>
+        
+    <div class="pageNavigationBar">
+  
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="helpfulresources.html" id="test">Helpfull Resources</a>
+        <a href="findus.html">Get in touch</a>
+        <a href="signup.html">Signup</a>
+  
+     
+    </div> 
+    <br><br><br><br>
+    <div class="pageContent">
+     
+        <h2 style="text-align: center; padding-top: -10px;">These are some good resources to study from for each topic</h2>
+        <table id="table" style="width: 100%;">
+            <tr>
+                <!--table heading-->
+                <th>Topic</th>
+                <th>Resources</th>  
+            </tr>
+            <tr>
+                <!-- here is the list of filters-->
+                <th style="text-align: center; " colspan="2" >
+                    <label for="filter">Filter:</label>
+                    <label for="all"><input type="radio" name="filter" id="all" onclick="showAll()"> All</label>
+                    <label for="java"><input type="radio" name="filter" id="java" onclick="showJava()">Java</label>
+                    <label for="python"><input type="radio" name="filter" id="python" onclick="showPhy()">Python</label>
+                    <label for="html/css"><input type="radio" name="filter" id="html/css" onclick="showHTML()">HTML/CSS</label>
+                    <label for="js"><input type="radio" name="filter" id="js" onclick="showJS()">Java Script</label>
+                    <label for="dataAndAlgo"><input type="radio" name="filter" id="dataAndAlgo" onclick="showDA()">Data Structure and Algorithms</label>
+
+                </th>
+            </tr>
+
+
+            <!--Now Here Every Row will be a topic !-->
+            <tr id="javaRow">
+                <th >Java</th>
+                <th>
+                    <li>Youtube</li>
+                    <li>W3schools</li>
+                    <li>Codecademy</li>
+                </th>
+            </tr>
+            <tr id="phthonRow">
+                <th>Python</th>
+                <th id="src">
+                    <li>Youtube</li>
+                    <li>W3schools</li>
+                    <li>Codecademy</li>
+                </th>
+            </tr>
+            <tr id="htmlRow">
+                <th>HTML / CSS</th>
+                <th id="src">
+                    <li>Youtube</li>
+                    <li>W3schools</li>
+                    <li>Codecademy</li>
+                </th>
+            </tr>
+            <tr id="jsRow">
+                <th>Java Script</th>
+                <th id="src">
+                    <li>Youtube</li>
+                    <li>W3schools</li>
+                    <li>Codecademy</li>
+                </th>
+            </tr>
+            <tr id="algoRow">
+                <th>Data Structure and Algorithms</th>
+                <th id="src">
+                    <li>Youtube</li>
+                    <li>W3schools</li>
+                    <li>Codecademy</li>
+                </th>
+            </tr>
+        </table>
+            
+        
+     
+    </div>
+     
+    <br><br><br><br><br><br><br>
+    <div class="pageFooter">
+     Made by PMUers 
+     
+    </div>
+    <script src="">
+
+    </script>
+    
+    </body>
+</html>

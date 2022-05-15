@@ -1,0 +1,95 @@
+BODY {
+	margin: 20px 0px 20px 0px;
+	background-color:0;
+	font-family: arial;
+	font-size: 12pt;
+    padding: 0;
+    background-image: url(bgrd.jpg);
+    font-family: 'Sora', sans-serif;
+	}
+	
+
+	
+.pageHeader{
+	
+    color: whitesmoke;
+	float: left;
+	clear: none;
+	min-height: 100px;
+	width: 90%;
+    margin-top: 0;
+	box-sizing: border-box;
+	
+	}
+
+.pageNavigationBar{
+
+    font-weight: bolder;
+    font-style: none;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	clear: none;
+	min-height: 50px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	}
+
+
+.pageNavigationBar a{
+    color: white;
+    text-decoration: none;
+    padding-right: 150px;
+    font-size: large;
+}
+.pageNavigationBar a:hover{
+    text-decoration: gold;
+	animation: glow;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+    
+}
+@keyframes glow {
+	from {
+	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+	}
+	to {
+	  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+	}
+  }
+	
+.pageContent{
+	
+    background: rgba(60, 60, 60, 0.4);
+	min-height: 450px;
+	width: 90%;
+	margin: auto;
+    color: white;
+	padding: 10px;
+	}
+.pageContent p{
+    font-size: xx-large;
+    color: white;
+}
+.pageContent li{
+    display: list-item;
+    padding-left: 100px;
+    font-size: xx-large;
+    color: white;
+	text-align: left;
+    
+}
+	
+.pageFooter{
+	
+	float: left;
+	clear: none;
+	min-height: 50px;
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 10px;
+	}

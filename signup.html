@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <style>
+        th{
+            
+            font-size: x-large;
+            text-align: left;
+            width: 100px;
+            padding-left: 250px;
+            padding-top: 30px;
+        }
+        td{
+           padding-top: 30px; 
+        }
+        
+    </style>
+</head>
+<body>
+    
+     
+    <div class="pageHeader">
+     
+        <img src="logo.png" alt="" height="7%" width="7%" style="float: left; padding-left: 50px; ">
+        <br>
+        <h1 style="text-align: center;">College of Computer Engineering and Science</h1>
+     
+    </div>
+        
+    <div class="pageNavigationBar">
+  
+      <a href="index.html">Home</a>
+      <a href="programs.html">Programs</a>
+      <a href="helpfulresources.html">Helpfull Resources</a>
+      <a href="findus.html">Get in touch</a>
+      <a href="signup.html">Signup</a>
+  
+     
+    </div> 
+     
+    <br><br><br><br>
+
+    <!-- body with img and form to sign up-->
+    <div class="pageContent">
+     
+        <img src="ccc2.jpg" alt="" width="50%" height="450px">
+        
+        <table id="table" style="text-align: center; width: 50%; float: right;">
+            
+
+            <caption>
+                <h2> Fill up your information to sign up to CCC</h2></caption>
+            
+            <tr>
+                <th>Name:</th>
+                <td style="text-align: left;"><input type="text" id="sName"><span id="valsName"></span></td>
+            </tr>
+            <tr>
+                <th>Id:</th>
+                <td style="text-align: left;"><input type="text" id="sName"><span id="valsName"></span></td>
+            </tr>
+            <tr>
+                <th>Phone number:</th>
+                <td style="text-align: left;"><input type="text" id="sName"><span id="valsName"></span></td>
+                
+            </tr>
+            
+            <tr>
+                <th>Email:</th>
+                <td style="text-align: left;"><input type="email" id="sName" placeholder="xyz123@pmu.edu.sa"><span id="valsName"></span></td>
+            </tr>
+        
+            <tr>
+                <th colspan="2" style="text-align: center; padding-right: 250px;" ><button id="submit" style="width: 100px;">Submit</button></th>
+            </tr>
+            
+            
+        </table>
+        
+        
+     
+    </div>
+     <br><br><br><br><br><br><br>
+    <div class="pageFooter">
+     Made by PMUers 
+     
+    </div>
+    
+
+    <script>
+
+        $(function(){
+            $("#submit").click(function(){
+                
+                
+                alert("You have succesfully signed up!")
+
+        })
+        })
+
+        
+    </script>
+    </body>
+</html>

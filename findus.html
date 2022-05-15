@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .pageContent i,label{
+            padding-left: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+     
+    <div class="pageHeader">
+     
+        <img src="logo.png" alt="" height="7%" width="7%" style="float: left; padding-left: 50px; ">
+        <br>
+        <h1 style="text-align: center;">College of Computer Engineering and Science</h1>
+     
+    </div>
+        
+    <div class="pageNavigationBar">
+  
+      <a href="index.html">Home</a>
+      <a href="programs.html">Programs</a>
+      <a href="helpfulresources.html">Helpfull Resources</a>
+      <a href="findus.html">Get in touch</a>
+      <a href="signup.html">Signup</a>
+  
+     
+    </div> 
+     
+    <br><br><br><br>
+
+    <!-- body with img and form to sign up-->
+    <div class="pageContent">
+     
+        <div class="container1" style="width: 50%; float: left; padding-top: 10px; margin-left: 15px;">
+            <a href=""><i class="fa fa-twitter" style="font-size: 100px; margin-left: 15% ;" ><label for="" style="" id="l1">Twitter</label></i> </a><br><br><br>
+            <a href=""><i class="fa fa-instagram" style="font-size: 100px;margin-left: 15% ;"><label for="">Instagram</label></i></a> <br><br><br>
+            <a href=""><i class="fa fa-snapchat" style="font-size: 100px;margin-left: 15%; "><label for="">Snapchat</label></i></a><br>
+        </div>
+        
+        
+        <div class="container2" style=" float:left; width: 49%;">
+            <h2 >Have any questions? any suggestions?
+                Feel free to send us an email !
+            </h2>
+            <span>Email: <br><input type="email" name="" id="email" style="background-color: lightgrey;"></span><br>
+            <span>Message:</span><br>
+            <textarea name="" id="message" cols="100" rows="10" style="background-color: lightgrey;"></textarea>  
+            <p style="text-align: center; padding-top: 10px;  ">
+                <button style="margin: 10px; width: 60px;" id="submit">submit</button> <button id="clear" style="margin: 10px; width: 60px;">clear</button>
+            </p>
+        </div> 
+        
+        
+        
+        
+     
+    </div>
+     <br><br><br><br><br><br><br>
+    <div class="pageFooter">
+     Made by PMUers 
+     
+    </div>
+    
+    <script>
+        
+        $(function(){
+
+            $("#submit").click(function(){
+                
+                alert("You message has been sent !")
+                document.getElementById("email").value = "";
+                document.getElementById("message").value = "";
+                
+                console.log("this owrks?");
+            })
+
+            $("#clear").click(function(){
+                
+                
+                document.getElementById("email").value = "";
+                document.getElementById("message").value = "";
+                
+                console.log("this owrks?");
+            })
+
+        })    
+    </script>
+    </body>
+</html>
